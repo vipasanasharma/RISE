@@ -1,0 +1,94 @@
+/* General Styles */
+.App {
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background-color: #f4f4f9;
+}
+
+/* Sidebar Navigation */
+.Sidebar {
+  width: 200px;
+  background-color: #333;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  padding: 20px 0;
+  box-shadow: 2px 0px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.Sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.Sidebar-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #aaa;
+  text-decoration: none;
+  margin: 15px 0;
+  transition: color 0.3s ease;
+}
+
+.Sidebar-link:hover {
+  color: #4a90e2;
+}
+
+.Sidebar-icon {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.Sidebar-link span {
+  font-size: 14px;
+}
+
+/* Header Styling */
+.App-header {
+  width: calc(100% - 200px); /* Adjust width to account for sidebar */
+  margin-left: 200px; /* Move header right to avoid overlap with sidebar */
+  text-align: center;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.App-header h1 {
+  font-size: 3em;
+  margin: 0;
+  color: #4a90e2;
+}
+
+.App-header p {
+  font-size: 1.2em;
+  color: #777;
+  margin-top: 5px;
+}
+
+.header-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+/* Main Content Styling */
+.Main-content {
+  flex: 1;
+  padding: 20px;
+  margin-left: 200px; /* Move main content right to avoid overlap with sidebar */
+  background-color: #ffffff;
+  box-shadow: -2px 0px 8px rgba(0, 0, 0, 0.05);
+}
